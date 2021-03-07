@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>chess board</title>
+    <style type="text/css">
+        .row {
+            display: flex;
+
+        }
+
+        .row .box:nth-child(odd) {
+            background: white;
+        }
+
+        .row .box:nth-child(even) {
+            background: rgb(0, 0, 0);
+            text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 1em red;
+        }
+
+        .row.odd .box:nth-child(odd) {
+            background: rgb(0, 0, 0);
+            text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 1em red;
+        }
+
+        .row.odd .box:nth-child(even) {
+            background: white;
+        }
+
+        .box {
+            font-size: 50px;
+            align-items: center;
+            text-align: center;
+            text-shadow: 1px 1px 2px black, 0 0 1em red;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+
+    </div>
+    <script src="./js/chess-board.js"></script>
+</body>
+
+</html>
